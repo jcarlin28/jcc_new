@@ -37,7 +37,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Scope+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -59,7 +59,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Scope One', serif;
+      font-family: 'Karla', sans-serif;
       font-size: 16px;
       line-height: 1.7;
       color: var(--green);
@@ -274,8 +274,9 @@
 
     /* ── HERO ─────────────────────────────────────────────────── */
     .hero {
-      background: var(--cream);
-      padding: 96px var(--ph) 96px;
+      background: var(--green) url('hero-bg.jpg') no-repeat right center;
+      background-size: cover;
+      padding: 112px var(--ph) 112px;
       position: relative;
       overflow: hidden;
     }
@@ -283,44 +284,12 @@
     .hero-inner {
       max-width: var(--max-w);
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 420px;
-      gap: 72px;
-      align-items: center;
       position: relative;
       z-index: 2;
     }
 
-    .hero-text { /* left column */ }
-
-    .hero-img-wrap {
-      position: relative;
-    }
-
-    .hero-img {
-      width: 100%;
-      height: 520px;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: 2px;
-      display: block;
-    }
-
-    .hero-img-placeholder {
-      width: 100%;
-      height: 520px;
-      background: rgba(27,43,42,0.04);
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: var(--slate);
-      font-size: 11px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    .hero-text {
+      max-width: 600px;
     }
 
     .hero h1 {
@@ -329,14 +298,14 @@
       font-weight: 700;
       line-height: 1.1;
       letter-spacing: -0.02em;
-      color: var(--green);
+      color: var(--white);
       margin-bottom: 28px;
     }
 
     .hero-sub {
       font-size: 17px;
       font-weight: 400;
-      color: var(--slate);
+      color: rgba(246,245,240,0.75);
       margin-bottom: 52px;
       line-height: 1.8;
     }
@@ -915,7 +884,7 @@
     input[type="text"],
     input[type="email"],
     textarea {
-      font-family: 'Scope One', serif;
+      font-family: 'Karla', sans-serif;
       font-size: 15px;
       font-weight: 400;
       color: var(--green);
@@ -969,7 +938,7 @@
       border: none;
       padding: 14px 32px;
       border-radius: 8px;
-      font-family: 'Scope One', serif;
+      font-family: 'Karla', sans-serif;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0.02em;
@@ -1038,8 +1007,7 @@
     /* ── RESPONSIVE ───────────────────────────────────────────── */
     @media (max-width: 960px) {
       :root { --ph: 32px; --pv: 84px; }
-      .hero-inner { grid-template-columns: 1fr; gap: 48px; }
-      .hero-img-wrap { display: none; }
+      .hero-inner { grid-template-columns: 1fr; }
       .about-inner { grid-template-columns: 1fr; gap: 40px; }
       .about-img, .about-img-placeholder { width: 100%; height: 280px; object-position: center 20%; }
       .services-grid { grid-template-columns: 1fr; }
@@ -1094,25 +1062,12 @@
 ──────────────────────────────────────────────────────────── -->
 <section class="hero">
   <div class="hero-inner">
-
     <div class="hero-text">
       <p class="eyebrow">Systems &amp; Operations Consultant</p>
       <h1>You shouldn&rsquo;t be the glue that holds your business together.</h1>
       <p class="hero-sub">Jess works with solo practitioners and small businesses to fix broken systems, connect disconnected tools, and build operations that don&rsquo;t need you in the middle of everything.</p>
       <a href="#contact" class="btn-dark">Book a Clarity Call &rarr;</a>
     </div>
-
-    <div class="hero-img-wrap">
-      <img
-        src="hero-image.jpg"
-        alt="Jessica Carlin"
-        class="hero-img"
-        onerror="this.style.display='none';document.getElementById('hero-ph').style.display='flex'">
-      <div class="hero-img-placeholder" id="hero-ph" style="display:none">
-        <span>Add hero-image.jpg</span>
-      </div>
-    </div>
-
   </div>
 </section>
 
