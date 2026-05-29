@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary meta -->
+  <title>Jessica Carlin Consulting | Business Systems &amp; Operations</title>
+  <meta name="description" content="Jess works with solo practitioners and small businesses to fix broken systems, connect disconnected tools, and build operations that don't need you in the middle of everything.">
+  <link rel="canonical" href="https://jesscarlin.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://jesscarlin.com/">
+  <meta property="og:title"       content="Jessica Carlin Consulting | Business Systems &amp; Operations">
+  <meta property="og:description" content="Jess works with solo practitioners and small businesses to fix broken systems, connect disconnected tools, and build operations that don't need you in the middle of everything.">
+  <meta property="og:image"       content="https://jesscarlin.com/og-image.jpg">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jessica Carlin",
+    "jobTitle": "Systems &amp; Operations Consultant",
+    "url": "https://jesscarlin.com",
+    "email": "hello@jesscarlin.com",
+    "sameAs": ["https://www.linkedin.com/in/jessicacarlin/"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Jessica Carlin Consulting"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green:      #1B2B2A;
+      --green-mid:  #243B39;
+      --terracotta: #C4552A;
+      --cream:      #F6F5F0;
+      --white:      #FFFFFF;
+      --slate:      #8B9E9D;
+      --slate-lt:   #B8C9C8;
+      --border:     rgba(27,43,42,0.09);
+      --border-lt:  rgba(246,245,240,0.1);
+      --max-w:      1080px;
+      --ph:         48px;   /* horizontal padding */
+      --pv:         108px;  /* vertical section padding */
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Karla', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--green);
+      background: var(--cream);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── UTILITY ──────────────────────────────────────────────── */
+    .inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--ph);
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .eyebrow::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: var(--terracotta);
+      flex-shrink: 0;
+    }
+
+    .eyebrow-light {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .eyebrow-light::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: var(--terracotta);
+      flex-shrink: 0;
+    }
+
+    .eyebrow-slate {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--slate);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .eyebrow-slate::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: var(--terracotta);
+      flex-shrink: 0;
+    }
+
+    .btn-dark {
+      display: inline-block;
+      background: var(--terracotta);
+      color: var(--white);
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: background 0.2s;
+    }
+    .btn-dark:hover { background: #a84623; }
+
+    .btn-outline-white {
+      display: inline-block;
+      border: 1px solid var(--terracotta);
+      color: var(--white);
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-outline-white:hover {
+      background: rgba(196,85,42,0.15);
+      border-color: var(--terracotta);
+    }
+
+    /* ── NAV ──────────────────────────────────────────────────── */
+    nav {
+      background: var(--green);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--ph);
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .nav-logo img {
+      height: 32px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-logo-fallback {
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--white);
+      letter-spacing: -0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+
+    .nav-cta {
+      background: var(--terracotta);
+      border: 1px solid var(--terracotta);
+      color: var(--white) !important;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 13px !important;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .nav-cta:hover {
+      background: #a84623 !important;
+      border-color: #a84623 !important;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--white);
+    }
+
+    .mobile-menu {
+      display: none;
+      background: var(--green);
+      padding: 8px var(--ph) 24px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a {
+      display: block;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      font-size: 15px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      transition: color 0.2s;
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu a:hover { color: var(--white); }
+
+    /* ── HERO ─────────────────────────────────────────────────── */
+    .hero {
+      background: var(--green) url('Assets/hero-bg.jpg') no-repeat right center;
+      background-size: cover;
+      padding: 112px var(--ph) 112px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(34px, 4.5vw, 60px);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 28px;
+    }
+
+    .hero-sub {
+      font-size: 17px;
+      font-weight: 400;
+      color: rgba(246,245,240,0.75);
+      margin-bottom: 52px;
+      line-height: 1.8;
+    }
+
+    /* ── CREDIBILITY STRIP ────────────────────────────────────── */
+    .cred-strip {
+      background: var(--white);
+      padding: 32px var(--ph);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cred-strip-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .cred-label {
+      display: block;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--slate-lt);
+      margin-bottom: 18px;
+    }
+
+    .cred-logos {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .cred-logo {
+      height: 22px;
+      width: auto;
+      max-width: 110px;
+      opacity: 0.32;
+      filter: grayscale(1);
+      transition: opacity 0.2s;
+      display: block;
+    }
+    .cred-logo:hover { opacity: 0.55; }
+
+    .cred-logo-text {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--slate-lt);
+      white-space: nowrap;
+    }
+
+    /* ── WHAT I DO ────────────────────────────────────────────── */
+    .what-i-do {
+      background: var(--white);
+      padding: var(--pv) var(--ph);
+    }
+
+    .what-i-do-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .what-i-do h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(26px, 3vw, 42px);
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 36px;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      max-width: 720px;
+    }
+
+    .what-i-do-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .what-i-do p {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--slate);
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+    .what-i-do p:last-child { margin-bottom: 0; }
+
+    .what-i-do-link {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--terracotta);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .what-i-do-link:hover { text-decoration: underline; }
+
+    /* ── ABOUT ────────────────────────────────────────────────── */
+    .about {
+      background: var(--green);
+      padding: var(--pv) var(--ph);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-diagram {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.4;
+    }
+
+    .about-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 80px;
+      align-items: start;
+      position: relative;
+      z-index: 2;
+    }
+
+    .about-photo-wrap {
+      position: relative;
+    }
+
+    .about-img {
+      width: 240px;
+      height: 300px;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 2px;
+      display: block;
+    }
+
+    .about-img-placeholder {
+      width: 240px;
+      height: 300px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.18);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .about-content { color: var(--white); }
+
+    .about h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(24px, 2.8vw, 36px);
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--white);
+      margin-bottom: 28px;
+      letter-spacing: -0.01em;
+    }
+
+    .about p {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.58);
+      margin-bottom: 20px;
+      line-height: 1.85;
+    }
+    .about p:last-child { margin-bottom: 0; }
+
+    /* ── TESTIMONIAL ──────────────────────────────────────────── */
+    .testimonial {
+      background: var(--cream);
+      padding: var(--pv) var(--ph);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .testimonial-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .testimonial-inner::before {
+      content: '\201C';
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-size: 80px;
+      line-height: 0.6;
+      color: var(--terracotta);
+      opacity: 0.4;
+      margin-bottom: 24px;
+    }
+
+    .testimonial blockquote {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(20px, 2.6vw, 30px);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.55;
+      color: var(--green);
+      margin-bottom: 32px;
+    }
+
+    .testimonial cite {
+      font-style: normal;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--slate);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ── SERVICES ─────────────────────────────────────────────── */
+    .services {
+      background: var(--white);
+      padding: var(--pv) var(--ph);
+    }
+
+    .services-header { margin-bottom: 56px; }
+
+    .services h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(28px, 3.5vw, 46px);
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .services-intro {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--slate);
+      max-width: 600px;
+      line-height: 1.8;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+    }
+
+    .service-card {
+      border: 1px solid var(--border);
+      padding: 36px;
+      background: var(--white);
+      position: relative;
+      transition: border-color 0.25s;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--terracotta);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-card:hover { border-color: rgba(27,43,42,0.22); }
+
+    .service-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 6px;
+    }
+
+    .service-card h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--green);
+      line-height: 1.25;
+    }
+
+    .service-price {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green);
+      background: var(--cream);
+      padding: 5px 12px;
+      border-radius: 2px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .service-duration {
+      font-size: 12px;
+      color: var(--slate);
+      letter-spacing: 0.02em;
+      margin-bottom: 20px;
+    }
+
+    .service-desc {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--slate);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .service-fit {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--green);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .service-fit strong { font-weight: 500; }
+
+    .service-hours {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--terracotta);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── RESULTS ──────────────────────────────────────────────── */
+    .results {
+      background: var(--green);
+      padding: var(--pv) var(--ph);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .results-diagram {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 38%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.35;
+    }
+
+    .results-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .results h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(28px, 3.5vw, 46px);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .results-intro {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.48);
+      max-width: 580px;
+      line-height: 1.8;
+      margin-bottom: 52px;
+    }
+
+    /* Case study card grid */
+    .results-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      margin-bottom: 52px;
+    }
+
+    .result-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      padding: 36px;
+      transition: background 0.25s;
+      position: relative;
+    }
+    .result-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--terracotta);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .result-card:hover::before { transform: scaleX(1); }
+    .result-card:hover { background: rgba(255,255,255,0.07); }
+
+    .result-card.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .result-tag {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .result-tag::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 1px;
+      background: var(--terracotta);
+      flex-shrink: 0;
+    }
+
+    .result-card h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(18px, 1.8vw, 24px);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 14px;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    .result-card p {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.48);
+      line-height: 1.8;
+    }
+
+    .results-close {
+      margin-top: 0;
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(18px, 2vw, 24px);
+      font-style: italic;
+      color: rgba(255,255,255,0.38);
+      max-width: 520px;
+      line-height: 1.55;
+    }
+
+    .results-cta { margin-top: 48px; }
+
+    /* ── CLOSING CTA ──────────────────────────────────────────── */
+    .closing-cta {
+      background: var(--cream);
+      padding: var(--pv) var(--ph);
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .closing-cta-inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .closing-cta h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(28px, 3.5vw, 48px);
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+    }
+
+    .closing-cta p {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--slate);
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    /* ── CONTACT ──────────────────────────────────────────────── */
+    .contact {
+      background: var(--white);
+      padding: var(--pv) var(--ph);
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 88px;
+      align-items: start;
+    }
+
+    .contact-left h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .contact-left p {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--slate);
+      margin-bottom: 36px;
+      line-height: 1.8;
+    }
+
+    .contact-email {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--green);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-email::before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 1px;
+      background: var(--terracotta);
+      flex-shrink: 0;
+    }
+    .contact-email:hover { text-decoration: underline; }
+
+    /* Form */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--green);
+      letter-spacing: 0.03em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-family: 'Karla', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--green);
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 11px 14px;
+      width: 100%;
+      transition: border-color 0.2s;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: rgba(27,43,42,0.4);
+    }
+
+    textarea { resize: vertical; min-height: 120px; }
+
+    .interest-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--green);
+      letter-spacing: 0.03em;
+      margin-bottom: 10px;
+    }
+
+    .checkboxes { display: flex; flex-direction: column; gap: 10px; }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--slate);
+    }
+    .checkbox-row input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+      accent-color: var(--terracotta);
+      cursor: pointer;
+    }
+
+    .btn-submit {
+      background: var(--terracotta);
+      color: var(--white);
+      border: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-family: 'Karla', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      transition: background 0.2s;
+      align-self: flex-start;
+    }
+    .btn-submit:hover { background: #a84623; }
+
+    /* ── FOOTER ───────────────────────────────────────────────── */
+    footer {
+      background: var(--green);
+      padding: 44px var(--ph);
+    }
+
+    .footer-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      font-style: italic;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .footer-tagline {
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      font-style: italic;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: -0.01em;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.35);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+
+    .footer-copy {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      color: rgba(255,255,255,0.2);
+      font-size: 12px;
+    }
+
+    /* ── RESPONSIVE ───────────────────────────────────────────── */
+    @media (max-width: 960px) {
+      :root { --ph: 32px; --pv: 84px; }
+      .hero-inner { grid-template-columns: 1fr; }
+      .about-inner { grid-template-columns: 1fr; gap: 40px; }
+      .about-img, .about-img-placeholder { width: 100%; height: 280px; object-position: center 20%; }
+      .services-grid { grid-template-columns: 1fr; }
+      .results-grid { grid-template-columns: 1fr; }
+      .result-card.full-width { grid-column: 1; }
+      .what-i-do-body { grid-template-columns: 1fr; gap: 0; }
+      .contact-inner { grid-template-columns: 1fr; gap: 52px; }
+    }
+
+    @media (max-width: 640px) {
+      :root { --ph: 20px; --pv: 68px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .footer-links { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ──────────────────────────────────────────────────────────
+     NAV
+──────────────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="Assets/logo-nav.png" alt="Jessica Carlin Consulting"
+        onerror="this.style.display='none';document.getElementById('nav-logo-text').style.display='block'">
+      <span class="nav-logo-fallback" id="nav-logo-text" style="display:none">Jessica Carlin</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#contact" class="nav-cta">Book a Call</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about"    onclick="closeMobile()">About</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#results"  onclick="closeMobile()">Results</a>
+    <a href="#contact"  onclick="closeMobile()">Book a Call</a>
+  </div>
+</nav>
+
+<!-- ──────────────────────────────────────────────────────────
+     HERO
+──────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Systems &amp; Operations Consultant</p>
+      <h1>You shouldn&rsquo;t be the glue that holds your business together.</h1>
+      <p class="hero-sub">Jess works with solo practitioners and small businesses to fix broken systems, connect disconnected tools, and build operations that don&rsquo;t need you in the middle of everything.</p>
+      <a href="#contact" class="btn-dark">Book a Clarity Call &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────
+     CREDIBILITY STRIP
+     Add logo files to this folder and update the src attributes.
+     File names to use: logo-eitcc.png, logo-economist.png,
+     logo-peacock.png, logo-cineworld.png, logo-universal.png,
+     logo-disney.png, logo-warnerbros.png
+──────────────────────────────────────────────────────────── -->
+<section class="cred-strip">
+  <div class="cred-strip-inner">
+    <span class="cred-label">Organisations I&rsquo;ve worked with</span>
+    <div class="cred-logos">
+      <img src="Assets/logo-eitcc.png"      alt="EIT Culture &amp; Creativity" class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>EIT Culture &amp; Creativity</span>'">
+      <img src="Assets/logo-economist.png"  alt="The Economist Group"          class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>The Economist Group</span>'">
+      <img src="Assets/logo-peacock.png"    alt="NBCUniversal &middot; Peacock" class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>NBCUniversal &middot; Peacock</span>'">
+      <img src="Assets/logo-cineworld.png"  alt="Cineworld"                    class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>Cineworld</span>'">
+      <img src="Assets/logo-universal.png"  alt="Universal Pictures"           class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>Universal Pictures</span>'">
+      <img src="Assets/logo-disney.png"     alt="Disney"                       class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>Disney</span>'">
+      <img src="Assets/logo-warnerbros.png" alt="Warner Bros"                  class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>Warner Bros</span>'">
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────
+     WHAT I DO
+──────────────────────────────────────────────────────────── -->
+<section class="what-i-do">
+  <div class="what-i-do-inner">
+    <p class="eyebrow-slate">What I Do</p>
+    <h2>You&rsquo;ve invested in the tools, the platforms, and maybe the team. But you&rsquo;re still the one making sure everything works.</h2>
+    <div class="what-i-do-body">
+      <div>
+        <p>It&rsquo;s not that the problem is a lack of tools &mdash; it&rsquo;s that those tools don&rsquo;t talk to each other, the processes exist in your head, or the whole thing has grown in a way that now creates more work than it saves.</p>
+      </div>
+      <div>
+        <p>Jess takes your disconnected systems, broken workflows, and data that&rsquo;s going nowhere and turns them into something that actually runs &mdash; whether that means cleaning up your data, connecting your platforms, or building processes someone else can own.</p>
+        <a href="#results" class="what-i-do-link">Case study: from disconnected stack to systems that run without you &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────
+     ABOUT
+──────────────────────────────────────────────────────────── -->
+<section class="about" id="about">
+
+  <svg class="about-diagram" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMid slice">
+    <circle cx="200" cy="150" r="80" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
+    <circle cx="200" cy="150" r="40" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
+    <circle cx="300" cy="350" r="60" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
+    <line x1="200" y1="150" x2="300" y2="350" stroke="#F6F5F0" stroke-width="0.6"/>
+    <circle cx="100" cy="400" r="45" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
+    <line x1="300" y1="350" x2="100" y2="400" stroke="#F6F5F0" stroke-width="0.6"/>
+    <circle cx="200" cy="150" r="5" fill="#C4552A" opacity="0.7"/>
+    <circle cx="300" cy="350" r="5" fill="#C4552A" opacity="0.5"/>
+  </svg>
+
+  <div class="about-inner">
+    <div class="about-photo-wrap">
+      <img
+        src="Assets/headshot.jpg"
+        alt="Jessica Carlin"
+        class="about-img"
+        onerror="this.style.display='none';document.getElementById('photo-ph').style.display='flex'">
+      <div class="about-img-placeholder" id="photo-ph" style="display:none">
+        Headshot
+      </div>
+    </div>
+
+    <div class="about-content">
+      <p class="eyebrow-light">About</p>
+      <h2>Both sides of the table.</h2>
+      <p>Jess has worked on digital transformation projects across multinational companies and small businesses, as well as co-founded an Innovate UK grant-winning adtech startup &mdash; which means she&rsquo;s been on both sides of the table.</p>
+      <p>The problems that slow down a 50-person team are the same ones that slow down a solo practitioner. She has seen them at The Economist Group, at NBCUniversal, at government-backed organisations, and in businesses of one. The scale of the problem might change, but the underlying issues don&rsquo;t.</p>
+      <p>It&rsquo;s not about making things sound more complicated than they are. It&rsquo;s about making your business work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────
+     SERVICES
+──────────────────────────────────────────────────────────── -->
+<section class="services" id="services">
+  <div class="inner">
+    <div class="services-header">
+      <p class="eyebrow-slate">Services</p>
+      <h2>How It Works</h2>
+      <p class="services-intro">Every engagement starts with a deep dive into where your business actually is.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- 1 · Clarity Call -->
+      <div class="service-card">
+        <div class="service-top">
+          <h3>The Clarity Call</h3>
+          <span class="service-price">&pound;500</span>
+        </div>
+        <p class="service-duration">90 minutes &middot; written summary within 48 hours</p>
+        <p class="service-desc">A focused session to identify what&rsquo;s broken, what matters most, and where to start. Written summary within 48 hours.</p>
+        <p class="service-fit"><strong>Right for you if:</strong> You know something isn&rsquo;t working but aren&rsquo;t sure where the problem starts or ends. Often the first step into a longer engagement.</p>
+        <p class="service-hours">Fixed scope</p>
+      </div>
+
+      <!-- 2 · Systems Audit -->
+      <div class="service-card">
+        <div class="service-top">
+          <h3>The Systems Audit</h3>
+          <span class="service-price">&pound;3,000</span>
+        </div>
+        <p class="service-duration">2&ndash;3 weeks &middot; intake call + written action plan + delivery call</p>
+        <p class="service-desc">A full review of your tech stack, workflows, and processes, with a prioritised action plan for fixing what&rsquo;s not working.</p>
+        <p class="service-fit"><strong>Right for you if:</strong> You&rsquo;ve tried to fix things yourself and keep hitting the same walls. You need someone to look at the whole picture and tell you what actually matters.</p>
+        <p class="service-hours">Fixed scope</p>
+      </div>
+
+      <!-- 3 · Done-With-You -->
+      <div class="service-card">
+        <div class="service-top">
+          <h3>Done-With-You Implementation</h3>
+          <span class="service-price">&pound;1,500/mo</span>
+        </div>
+        <p class="service-duration">Monthly &middot; two sessions + async support</p>
+        <p class="service-desc">Guided implementation of what the audit surfaced. Fixed scope, agreed at the start of each month. No surprises.</p>
+        <p class="service-fit"><strong>Right for you if:</strong> You have a clear plan but need expert guidance to execute it without going down the wrong rabbit holes.</p>
+        <p class="service-hours">Fixed scope &middot; extra hrs at &pound;150/hr</p>
+      </div>
+
+      <!-- 4 · Monthly Advisory -->
+      <div class="service-card">
+        <div class="service-top">
+          <h3>The Monthly Advisory</h3>
+          <span class="service-price">&pound;1,000/mo</span>
+        </div>
+        <p class="service-duration">Limited to five clients</p>
+        <p class="service-desc">A consistent thinking partner who already knows your business. Limited to five clients.</p>
+        <p class="service-fit"><strong>Right for you if:</strong> You want ongoing support without a big commitment. Often where clients land after implementation ends.</p>
+        <p class="service-hours">Fixed scope &middot; limited availability</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────
+     RESULTS
+──────────────────────────────────────────────────────────── -->
+<section class="results" id="results">
+
+  <svg class="results-diagram" viewBox="0 0 380 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid slice">
+    <circle cx="190" cy="120" r="90" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
+    <circle cx="80"  cy="320" r="65" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
+    <circle cx="280" cy="450" r="70" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
+    <line x1="190" y1="120" x2="80"  y2="320" stroke="#F6F5F0" stroke-width="0.6"/>
+    <line x1="80"  y1="320" x2="280" y2="450" stroke="#F6F5F0" stroke-width="0.6"/>
+    <circle cx="190" cy="120" r="5" fill="#C4552A" opacity="0.6"/>
+    <circle cx="80"  cy="320" r="4" fill="#C4552A" opacity="0.4"/>
+    <circle cx="280" cy="450" r="4" fill="#C4552A" opacity="0.4"/>
+  </svg>
+
+  <div class="results-inner">
+    <p class="eyebrow-light">Results</p>
+    <h2>The same pattern across every scale</h2>
+    <p class="results-intro">Siloed tools, broken processes, systems that depend on one person to hold them together: scale doesn&rsquo;t matter, which is why the same approach applies across the board.</p>
+
+    <div class="results-grid">
+
+      <div class="result-card">
+        <p class="result-tag">EU Government Body</p>
+        <h3>Marketing Capability Assessment &amp; Operational Roadmap</h3>
+        <p>A 50-person body where communications, technology, and team processes had each grown independently and never been connected. Led the full assessment and built the roadmap to bring them together.</p>
+      </div>
+
+      <div class="result-card">
+        <p class="result-tag">Major News Publication</p>
+        <h3>Growth Marketing &amp; Creative Operations Audit</h3>
+        <p>Delivered across 5 business units to surface what wasn&rsquo;t working and why. Multiple stakeholder streams, one clear picture of where the problems started.</p>
+      </div>
+
+      <div class="result-card">
+        <p class="result-tag">Major Streaming Platform</p>
+        <h3>Marketing Operations &amp; Tracking Platform Review</h3>
+        <p>The tools were in place but the integration was not. Led the review and defined the connections. Praised by client leadership for the resulting efficiency improvements.</p>
+      </div>
+
+      <div class="result-card">
+        <p class="result-tag">Creative &amp; Marketing Teams</p>
+        <h3>Airtable Implementations &amp; Full Data Migrations</h3>
+        <p>For teams who had outgrown their spreadsheets and needed a structured system to replace them. End-to-end implementation and migration, built to be owned by the team.</p>
+      </div>
+
+      <div class="result-card full-width">
+        <p class="result-tag">Co-Founder</p>
+        <h3>Innovate UK-Backed Adtech Startup &mdash; Two Grant Cycles</h3>
+        <p>Co-founded through two Innovate UK grant cycles. This means understanding what it is to be responsible for building the systems &mdash; not just advising on them &mdash; with limited time, limited budget, and no one to escalate to.</p>
+      </div>
+
+    </div>
+
+    <div class="results-cta">
+      <a href="#contact" class="btn-outline-white">Let&rsquo;s talk</a>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────
+     TESTIMONIAL — hidden until real quote is ready
+     To re-enable: remove the style="display:none" attribute
+──────────────────────────────────────────────────────────── -->
+<section class="testimonial" style="display:none">
+  <div class="testimonial-inner">
+    <blockquote>
+      [Testimonial placeholder &mdash; coming soon]
+    </blockquote>
+    <cite>&mdash; [Name], [Role]</cite>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────
+     CLOSING CTA
+──────────────────────────────────────────────────────────── -->
+<section class="closing-cta">
+  <div class="closing-cta-inner">
+    <p class="eyebrow" style="justify-content:center">Get Started</p>
+    <h2>Ready to stop holding everything together yourself?</h2>
+    <p>The Clarity Call is 90 minutes. You&rsquo;ll leave with a clear picture of what&rsquo;s broken and a concrete plan for what to do next.</p>
+    <a href="#contact" class="btn-dark">Book a Clarity Call &rarr;</a>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────
+     CONTACT
+──────────────────────────────────────────────────────────── -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+
+    <div class="contact-left">
+      <p class="eyebrow-slate">Contact</p>
+      <h2>Let&rsquo;s Talk</h2>
+      <p>If your business is running well but the systems behind it are not, let&rsquo;s talk.</p>
+      <a href="mailto:hello@jesscarlin.com" class="contact-email">hello@jesscarlin.com</a>
+    </div>
+
+    <!--
+      FORM SETUP:
+      1. Sign up free at formspree.io
+      2. Create a form pointing to hello@jesscarlin.com
+      3. Replace YOUR_FORM_ID below with your real form ID
+    -->
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First name *</label>
+          <input type="text" id="fname" name="first_name" required autocomplete="given-name">
+        </div>
+        <div class="form-group">
+          <label for="lname">Last name *</label>
+          <input type="text" id="lname" name="last_name" required autocomplete="family-name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="org">Organisation</label>
+        <input type="text" id="org" name="organisation" autocomplete="organization">
+      </div>
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required placeholder="What&apos;s going on in your business?"></textarea>
+      </div>
+      <div>
+        <p class="interest-label">I&rsquo;m interested in</p>
+        <div class="checkboxes">
+          <label class="checkbox-row">
+            <input type="checkbox" name="interest" value="The Clarity Call">
+            The Clarity Call &mdash; &pound;500
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" name="interest" value="The Systems Audit">
+            The Systems Audit &mdash; &pound;3,000
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" name="interest" value="Done-With-You Implementation">
+            Done-With-You Implementation &mdash; &pound;1,500/mo
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" name="interest" value="The Monthly Advisory">
+            The Monthly Advisory &mdash; &pound;1,000/mo
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" name="interest" value="Other">
+            Other
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn-submit">Get In Touch</button>
+    </form>
+
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────
+     FOOTER
+──────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">Jessica Carlin Consulting</a>
+    <span class="footer-tagline">Stop being the glue.</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/jessicacarlin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:hello@jesscarlin.com">hello@jesscarlin.com</a>
+    </div>
+  </div>
+  <div class="footer-inner">
+    <p class="footer-copy">&copy; 2026 Jessica Carlin Consulting</p>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  function closeMobile() { mobileMenu.classList.remove('open'); }
+</script>
+
+</body>
+</html>
