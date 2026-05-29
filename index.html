@@ -6,14 +6,14 @@
 
   <!-- Primary meta -->
   <title>Jessica Carlin Consulting | Business Systems &amp; Operations</title>
-  <meta name="description" content="Your tools don't talk to each other. Something's always broken. And you're the one holding it all together. Jessica Carlin audits what's not working, builds a clear plan, and helps you implement it.">
+  <meta name="description" content="Jess works with solo practitioners and small businesses to fix broken systems, connect disconnected tools, and build operations that don't need you in the middle of everything.">
   <link rel="canonical" href="https://jesscarlin.com/">
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://jesscarlin.com/">
   <meta property="og:title"       content="Jessica Carlin Consulting | Business Systems &amp; Operations">
-  <meta property="og:description" content="Your systems are costing you time and clients. I audit what's not working, build a clear plan, and help you implement it — in the right order.">
+  <meta property="og:description" content="Jess works with solo practitioners and small businesses to fix broken systems, connect disconnected tools, and build operations that don't need you in the middle of everything.">
   <meta property="og:image"       content="https://jesscarlin.com/og-image.jpg">
   <meta name="twitter:card"       content="summary_large_image">
 
@@ -291,7 +291,7 @@
       z-index: 2;
     }
 
-    .hero-text { /* left column — no extra styles needed */ }
+    .hero-text { /* left column */ }
 
     .hero-img-wrap {
       position: relative;
@@ -323,84 +323,6 @@
       text-transform: uppercase;
     }
 
-    /* Subtle node diagram as overlay on the hero image */
-    .hero-img-diagram {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      opacity: 0.18;
-    }
-
-    /* ── LOGO CAROUSEL ────────────────────────────────────────── */
-    .logos {
-      background: var(--white);
-      padding: 44px 0;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      overflow: hidden;
-    }
-
-    .logos-label {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--slate);
-      margin-bottom: 24px;
-      text-align: center;
-      padding: 0 var(--ph);
-    }
-
-    .logos-track-wrap {
-      overflow: hidden;
-      width: 100%;
-      /* fade edges */
-      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-              mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-    }
-
-    .logos-track {
-      display: flex;
-      align-items: center;
-      gap: 56px;
-      width: max-content;
-      animation: scroll-logos 70s linear infinite;
-    }
-
-    .logos-track:hover { animation-play-state: paused; }
-
-    @keyframes scroll-logos {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
-    }
-
-    .logo-item {
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-    }
-
-    .logo-img {
-      height: 26px;
-      width: auto;
-      max-width: 130px;
-      opacity: 0.45;
-      filter: grayscale(1);
-      transition: opacity 0.2s, filter 0.2s;
-      display: block;
-    }
-    .logo-img:hover { opacity: 0.75; filter: grayscale(0.5); }
-
-    /* text pill shown while image files are missing */
-    .logo-pill {
-      font-size: 13px;
-      font-weight: 400;
-      color: var(--slate);
-      white-space: nowrap;
-      letter-spacing: 0.01em;
-      opacity: 0.7;
-    }
-
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(34px, 4.5vw, 60px);
@@ -420,6 +342,106 @@
       line-height: 1.8;
     }
 
+    /* ── CREDIBILITY STRIP ────────────────────────────────────── */
+    .cred-strip {
+      background: var(--white);
+      padding: 32px var(--ph);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cred-strip-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .cred-label {
+      display: block;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--slate-lt);
+      margin-bottom: 18px;
+    }
+
+    .cred-logos {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .cred-logo {
+      height: 22px;
+      width: auto;
+      max-width: 110px;
+      opacity: 0.32;
+      filter: grayscale(1);
+      transition: opacity 0.2s;
+      display: block;
+    }
+    .cred-logo:hover { opacity: 0.55; }
+
+    .cred-logo-text {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--slate-lt);
+      white-space: nowrap;
+    }
+
+    /* ── WHAT I DO ────────────────────────────────────────────── */
+    .what-i-do {
+      background: var(--white);
+      padding: var(--pv) var(--ph);
+    }
+
+    .what-i-do-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .what-i-do h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(26px, 3vw, 42px);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--green);
+      margin-bottom: 36px;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      max-width: 720px;
+    }
+
+    .what-i-do-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .what-i-do p {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--slate);
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+    .what-i-do p:last-child { margin-bottom: 0; }
+
+    .what-i-do-link {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--terracotta);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .what-i-do-link:hover { text-decoration: underline; }
 
     /* ── ABOUT ────────────────────────────────────────────────── */
     .about {
@@ -480,7 +502,6 @@
 
     .about-content { color: var(--white); }
 
-
     .about h2 {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(24px, 2.8vw, 36px);
@@ -501,35 +522,6 @@
     }
     .about p:last-child { margin-bottom: 0; }
 
-    .about-list {
-      list-style: none;
-      margin-top: 4px;
-    }
-    .about-list li {
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-      padding: 20px 0;
-      border-top: 1px solid rgba(255,255,255,0.07);
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 1.75;
-      color: rgba(255,255,255,0.52);
-    }
-    .about-list li:last-child {
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-    }
-    .about-list .arrow {
-      color: var(--terracotta);
-      flex-shrink: 0;
-      margin-top: 3px;
-      font-size: 14px;
-    }
-    .about-list strong {
-      color: var(--white);
-      font-weight: 500;
-    }
-
     /* ── TESTIMONIAL ──────────────────────────────────────────── */
     .testimonial {
       background: var(--cream);
@@ -544,7 +536,6 @@
       text-align: center;
     }
 
-    /* large open-quote mark */
     .testimonial-inner::before {
       content: '\201C';
       display: block;
@@ -616,7 +607,6 @@
       transition: border-color 0.25s;
     }
 
-    /* Terracotta top-bar reveal on hover */
     .service-card::before {
       content: '';
       position: absolute;
@@ -671,30 +661,6 @@
       color: var(--slate);
       line-height: 1.8;
       margin-bottom: 20px;
-    }
-
-    /* Intake questions list inside Clarity Call */
-    .intake-list {
-      margin: 12px 0 16px 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .intake-list li {
-      font-size: 13px;
-      font-weight: 300;
-      color: var(--slate);
-      line-height: 1.65;
-      padding-left: 16px;
-      position: relative;
-    }
-    .intake-list li::before {
-      content: '—';
-      position: absolute;
-      left: 0;
-      color: var(--terracotta);
     }
 
     .service-fit {
@@ -761,39 +727,78 @@
       margin-bottom: 52px;
     }
 
-    .results-list {
-      list-style: none;
+    /* Case study card grid */
+    .results-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      margin-bottom: 52px;
     }
 
-    .results-list li {
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-      padding: 24px 0;
-      border-top: 1px solid rgba(255,255,255,0.07);
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 1.8;
-      color: rgba(255,255,255,0.52);
+    .result-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      padding: 36px;
+      transition: background 0.25s;
+      position: relative;
     }
-    .results-list li:last-child {
-      border-bottom: 1px solid rgba(255,255,255,0.07);
+    .result-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--terracotta);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .result-card:hover::before { transform: scaleX(1); }
+    .result-card:hover { background: rgba(255,255,255,0.07); }
+
+    .result-card.full-width {
+      grid-column: 1 / -1;
     }
 
-    .results-arrow {
-      color: var(--terracotta);
-      flex-shrink: 0;
-      margin-top: 4px;
-      font-size: 14px;
-    }
-
-    .results-list strong {
-      color: var(--white);
+    .result-tag {
+      font-size: 10px;
       font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .result-tag::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 1px;
+      background: var(--terracotta);
+      flex-shrink: 0;
+    }
+
+    .result-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(18px, 1.8vw, 24px);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--white);
+      margin-bottom: 14px;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    .result-card p {
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.48);
+      line-height: 1.8;
     }
 
     .results-close {
-      margin-top: 52px;
+      margin-top: 0;
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(18px, 2vw, 24px);
       font-style: italic;
@@ -804,9 +809,41 @@
 
     .results-cta { margin-top: 48px; }
 
+    /* ── CLOSING CTA ──────────────────────────────────────────── */
+    .closing-cta {
+      background: var(--cream);
+      padding: var(--pv) var(--ph);
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .closing-cta-inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .closing-cta h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 3.5vw, 48px);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--green);
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+    }
+
+    .closing-cta p {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--slate);
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
     /* ── CONTACT ──────────────────────────────────────────────── */
     .contact {
-      background: var(--cream);
+      background: var(--white);
       padding: var(--pv) var(--ph);
       border-top: 1px solid var(--border);
     }
@@ -891,7 +928,7 @@
       font-size: 15px;
       font-weight: 300;
       color: var(--green);
-      background: var(--white);
+      background: var(--cream);
       border: 1px solid var(--border);
       border-radius: 2px;
       padding: 11px 14px;
@@ -976,6 +1013,14 @@
       letter-spacing: -0.01em;
     }
 
+    .footer-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 15px;
+      font-style: italic;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: -0.01em;
+    }
+
     .footer-links {
       display: flex;
       gap: 28px;
@@ -999,55 +1044,6 @@
       font-size: 12px;
     }
 
-    /* ── CREDIBILITY STRIP ────────────────────────────────────── */
-    .cred-strip {
-      background: var(--white);
-      padding: 32px var(--ph);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .cred-strip-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-    }
-
-    .cred-label {
-      display: block;
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--slate-lt);
-      margin-bottom: 18px;
-    }
-
-    .cred-logos {
-      display: flex;
-      gap: 36px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .cred-logo {
-      height: 22px;
-      width: auto;
-      max-width: 110px;
-      opacity: 0.32;
-      filter: grayscale(1);
-      transition: opacity 0.2s;
-      display: block;
-    }
-    .cred-logo:hover { opacity: 0.55; }
-
-    .cred-logo-text {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--slate-lt);
-      white-space: nowrap;
-    }
-
     /* ── RESPONSIVE ───────────────────────────────────────────── */
     @media (max-width: 960px) {
       :root { --ph: 32px; --pv: 84px; }
@@ -1056,6 +1052,9 @@
       .about-inner { grid-template-columns: 1fr; gap: 40px; }
       .about-img, .about-img-placeholder { width: 100%; height: 280px; object-position: center 20%; }
       .services-grid { grid-template-columns: 1fr; }
+      .results-grid { grid-template-columns: 1fr; }
+      .result-card.full-width { grid-column: 1; }
+      .what-i-do-body { grid-template-columns: 1fr; gap: 0; }
       .contact-inner { grid-template-columns: 1fr; gap: 52px; }
     }
 
@@ -1085,7 +1084,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#results">Results</a></li>
-      <li><a href="#contact" class="nav-cta">Get Started</a></li>
+      <li><a href="#contact" class="nav-cta">Book a Call</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
       <span></span><span></span><span></span>
@@ -1095,7 +1094,7 @@
     <a href="#about"    onclick="closeMobile()">About</a>
     <a href="#services" onclick="closeMobile()">Services</a>
     <a href="#results"  onclick="closeMobile()">Results</a>
-    <a href="#contact"  onclick="closeMobile()">Get Started</a>
+    <a href="#contact"  onclick="closeMobile()">Book a Call</a>
   </div>
 </nav>
 
@@ -1107,9 +1106,9 @@
 
     <div class="hero-text">
       <p class="eyebrow">Systems &amp; Operations Consultant</p>
-      <h1>You shouldn&rsquo;t be too busy to take on a new client.</h1>
-      <p class="hero-sub">Running a business and running the systems behind it are two different problems. Most small business owners are solving only one of them. The tools are there, the processes exist, but nothing connects and everything still depends on one person to hold it together. The same pattern shows up at every scale, from large organisations to businesses of one, and it responds to the same approach.</p>
-      <a href="#contact" class="btn-dark">Get Started</a>
+      <h1>You shouldn&rsquo;t be the glue that holds your business together.</h1>
+      <p class="hero-sub">Jess works with solo practitioners and small businesses to fix broken systems, connect disconnected tools, and build operations that don&rsquo;t need you in the middle of everything.</p>
+      <a href="#contact" class="btn-dark">Book a Clarity Call &rarr;</a>
     </div>
 
     <div class="hero-img-wrap">
@@ -1126,9 +1125,12 @@
   </div>
 </section>
 
-
 <!-- ──────────────────────────────────────────────────────────
      CREDIBILITY STRIP
+     Add logo files to this folder and update the src attributes.
+     File names to use: logo-eitcc.png, logo-economist.png,
+     logo-peacock.png, logo-cineworld.png, logo-universal.png,
+     logo-disney.png, logo-warnerbros.png
 ──────────────────────────────────────────────────────────── -->
 <section class="cred-strip">
   <div class="cred-strip-inner">
@@ -1138,7 +1140,7 @@
         onerror="this.outerHTML='<span class=\'cred-logo-text\'>EIT Culture &amp; Creativity</span>'">
       <img src="logo-economist.png"  alt="The Economist Group"          class="cred-logo"
         onerror="this.outerHTML='<span class=\'cred-logo-text\'>The Economist Group</span>'">
-      <img src="logo-peacock.png"    alt="NBCUniversal · Peacock"       class="cred-logo"
+      <img src="logo-peacock.png"    alt="NBCUniversal &middot; Peacock" class="cred-logo"
         onerror="this.outerHTML='<span class=\'cred-logo-text\'>NBCUniversal &middot; Peacock</span>'">
       <img src="logo-cineworld.png"  alt="Cineworld"                    class="cred-logo"
         onerror="this.outerHTML='<span class=\'cred-logo-text\'>Cineworld</span>'">
@@ -1153,33 +1155,20 @@
 </section>
 
 <!-- ──────────────────────────────────────────────────────────
-     LOGO CAROUSEL
+     WHAT I DO
 ──────────────────────────────────────────────────────────── -->
-<section class="logos">
-  <p class="logos-label">Organisations I've worked with</p>
-  <div class="logos-track-wrap">
-    <div class="logos-track">
-
-      <!-- First set -->
-      <div class="logo-item"><img src="logo-eitcc.png"       alt="EIT Culture &amp; Creativity" class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>EIT Culture &amp; Creativity</span>'"></div>
-      <div class="logo-item"><img src="logo-economist.png"   alt="The Economist Group"          class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>The Economist Group</span>'"></div>
-      <div class="logo-item"><img src="logo-peacock.png"     alt="Peacock · NBCUniversal"       class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>Peacock · NBCUniversal</span>'"></div>
-      <div class="logo-item"><img src="logo-cineworld.png"   alt="Cineworld"                    class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>Cineworld</span>'"></div>
-      <div class="logo-item"><img src="logo-universal.png"   alt="Universal Pictures"           class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>Universal Pictures</span>'"></div>
-      <div class="logo-item"><img src="logo-disney.png"      alt="Disney"                       class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>Disney</span>'"></div>
-      <div class="logo-item"><img src="logo-warnerbros.png"  alt="Warner Bros"                  class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>Warner Bros</span>'"></div>
-      <div class="logo-item"><img src="logo-ukca.png"        alt="UK Cinema Association"        class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>UK Cinema Association</span>'"></div>
-
-      <!-- Duplicate set for seamless loop -->
-      <div class="logo-item"><img src="logo-eitcc.png"       alt="EIT Culture &amp; Creativity" class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>EIT Culture &amp; Creativity</span>'"></div>
-      <div class="logo-item"><img src="logo-economist.png"   alt="The Economist Group"          class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>The Economist Group</span>'"></div>
-      <div class="logo-item"><img src="logo-peacock.png"     alt="Peacock · NBCUniversal"       class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>Peacock · NBCUniversal</span>'"></div>
-      <div class="logo-item"><img src="logo-cineworld.png"   alt="Cineworld"                    class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>Cineworld</span>'"></div>
-      <div class="logo-item"><img src="logo-universal.png"   alt="Universal Pictures"           class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>Universal Pictures</span>'"></div>
-      <div class="logo-item"><img src="logo-disney.png"      alt="Disney"                       class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>Disney</span>'"></div>
-      <div class="logo-item"><img src="logo-warnerbros.png"  alt="Warner Bros"                  class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>Warner Bros</span>'"></div>
-      <div class="logo-item"><img src="logo-ukca.png"        alt="UK Cinema Association"        class="logo-img" onerror="this.outerHTML='<span class=\'logo-pill\'>UK Cinema Association</span>'"></div>
-
+<section class="what-i-do">
+  <div class="what-i-do-inner">
+    <p class="eyebrow-slate">What I Do</p>
+    <h2>You&rsquo;ve invested in the tools, the platforms, and maybe the team. But you&rsquo;re still the one making sure everything works.</h2>
+    <div class="what-i-do-body">
+      <div>
+        <p>It&rsquo;s not that the problem is a lack of tools &mdash; it&rsquo;s that those tools don&rsquo;t talk to each other, the processes exist in your head, or the whole thing has grown in a way that now creates more work than it saves.</p>
+      </div>
+      <div>
+        <p>Jess takes your disconnected systems, broken workflows, and data that&rsquo;s going nowhere and turns them into something that actually runs &mdash; whether that means cleaning up your data, connecting your platforms, or building processes someone else can own.</p>
+        <a href="#results" class="what-i-do-link">Case study: from disconnected stack to systems that run without you &rarr;</a>
+      </div>
     </div>
   </div>
 </section>
@@ -1189,7 +1178,6 @@
 ──────────────────────────────────────────────────────────── -->
 <section class="about" id="about">
 
-  <!-- Subtle diagram on right -->
   <svg class="about-diagram" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMid slice">
     <circle cx="200" cy="150" r="80" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
     <circle cx="200" cy="150" r="40" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
@@ -1215,10 +1203,10 @@
 
     <div class="about-content">
       <p class="eyebrow-light">About</p>
-      <h2>Jess has seen this problem at every scale, which means she can spot it fast in yours.</h2>
-      <p>This kind of problem has no respect for the size of the business. A disconnected tech stack, processes that only hold together because one person is actively managing them, work that should have been automated years ago: it shows up the same way in a solo business as in a 50-person team, and it responds to the same approach.</p>
-      <p>Having been a founder changes how you see this work. There&rsquo;s a difference between understanding a problem conceptually and having actually been the person responsible for fixing it, with limited time, limited budget, and no one to escalate to.</p>
-
+      <h2>Both sides of the table.</h2>
+      <p>Jess has worked on digital transformation projects across multinational companies and small businesses, as well as co-founded an Innovate UK grant-winning adtech startup &mdash; which means she&rsquo;s been on both sides of the table.</p>
+      <p>The problems that slow down a 50-person team are the same ones that slow down a solo practitioner. She has seen them at The Economist Group, at NBCUniversal, at government-backed organisations, and in businesses of one. The scale of the problem might change, but the underlying issues don&rsquo;t.</p>
+      <p>It&rsquo;s not about making things sound more complicated than they are. It&rsquo;s about making your business work.</p>
     </div>
   </div>
 </section>
@@ -1230,8 +1218,8 @@
   <div class="inner">
     <div class="services-header">
       <p class="eyebrow-slate">Services</p>
-      <h2>How I Work</h2>
-      <p class="services-intro">Every engagement starts from where the business actually is.</p>
+      <h2>How It Works</h2>
+      <p class="services-intro">Every engagement starts with a deep dive into where your business actually is.</p>
     </div>
 
     <div class="services-grid">
@@ -1243,10 +1231,9 @@
           <span class="service-price">&pound;500</span>
         </div>
         <p class="service-duration">90 minutes &middot; written summary within 48 hours</p>
-        <p class="service-desc">Before the call, you'll complete a short intake form covering the tools you're currently using, which ones you're actually going to use (not the ones you think you should), your biggest pain points right now, and what you actually mean when you say your workflow isn't working. Being specific here matters. There's no point building on tools you won't use or fixing problems you haven't named.</p>
-        <p class="service-desc">Jess reviews your answers in advance so the 90 minutes is spent on solutions, not information gathering. You leave with a clear picture of what's broken and where to start. Written summary within 48 hours.</p>
-        <p class="service-fit"><strong>Right for you if:</strong> You know something isn't working but aren't sure where the problem starts or ends. Often the first step into a longer engagement.</p>
-        <p class="service-hours">~2.5 hrs total including prep &amp; summary &middot; fixed scope</p>
+        <p class="service-desc">A focused session to identify what&rsquo;s broken, what matters most, and where to start. Written summary within 48 hours.</p>
+        <p class="service-fit"><strong>Right for you if:</strong> You know something isn&rsquo;t working but aren&rsquo;t sure where the problem starts or ends. Often the first step into a longer engagement.</p>
+        <p class="service-hours">Fixed scope</p>
       </div>
 
       <!-- 2 · Systems Audit -->
@@ -1256,15 +1243,9 @@
           <span class="service-price">&pound;3,000</span>
         </div>
         <p class="service-duration">2&ndash;3 weeks &middot; intake call + written action plan + delivery call</p>
-        <p class="service-desc">A full diagnostic of your tech stack, processes, and workflows. One 60-minute intake call, a thorough review of how everything connects (or doesn't), a written prioritised action plan, and one 60-minute delivery call to walk through the findings. The audit is a contained piece of work &mdash; no ongoing access beyond the delivery call, but everything you need to know what to fix and in what order.</p>
-        <p class="service-desc">Every audit includes an assessment of where automation and AI could save time:</p>
-        <ul class="intake-list">
-          <li>Simple workflow automations and quick wins that don&rsquo;t require significant setup</li>
-          <li>AI tools that integrate with what you&rsquo;re already using</li>
-          <li>Where more sophisticated implementation is needed, this is scoped and quoted separately once the audit has defined the requirement. You will never be asked to commit to a price for work whose complexity has not been established first</li>
-        </ul>
-        <p class="service-fit"><strong>Right for you if:</strong> You've tried to fix things yourself and keep hitting the same walls. You need someone to look at the whole picture and tell you what actually matters.</p>
-        <p class="service-hours">~10&ndash;12 hrs total &middot; fixed scope</p>
+        <p class="service-desc">A full review of your tech stack, workflows, and processes, with a prioritised action plan for fixing what&rsquo;s not working.</p>
+        <p class="service-fit"><strong>Right for you if:</strong> You&rsquo;ve tried to fix things yourself and keep hitting the same walls. You need someone to look at the whole picture and tell you what actually matters.</p>
+        <p class="service-hours">Fixed scope</p>
       </div>
 
       <!-- 3 · Done-With-You -->
@@ -1273,23 +1254,22 @@
           <h3>Done-With-You Implementation</h3>
           <span class="service-price">&pound;1,500/mo</span>
         </div>
-        <p class="service-duration">2&ndash;3 months &middot; two sessions + async support per month</p>
-        <p class="service-desc">Guided implementation of what the audit surfaced. Two 60-minute sessions per month plus up to 3 hours of async support &mdash; email, document reviews, quick questions. Five hours per month, fixed. Scope agreed at the start of each month so there are no surprises on either side. Additional hours billed at &pound;150/hour, agreed in advance.</p>
+        <p class="service-duration">Monthly &middot; two sessions + async support</p>
+        <p class="service-desc">Guided implementation of what the audit surfaced. Fixed scope, agreed at the start of each month. No surprises.</p>
         <p class="service-fit"><strong>Right for you if:</strong> You have a clear plan but need expert guidance to execute it without going down the wrong rabbit holes.</p>
-        <p class="service-hours">5 hrs/month &middot; fixed scope &middot; extra hrs at &pound;150/hr</p>
+        <p class="service-hours">Fixed scope &middot; extra hrs at &pound;150/hr</p>
       </div>
 
       <!-- 4 · Monthly Advisory -->
       <div class="service-card">
         <div class="service-top">
           <h3>The Monthly Advisory</h3>
-          <span class="service-price">&pound;750/mo</span>
+          <span class="service-price">&pound;1,000/mo</span>
         </div>
-        <p class="service-duration">Minimum 3 months &middot; limited to 5 clients</p>
-        <p class="service-desc">One 60-minute session per month plus up to 2 hours of async support. A consistent thinking partner who already knows the business, useful for sense-checking decisions, troubleshooting problems that come up between audits, and keeping momentum going after implementation ends.</p>
-        <p class="service-desc">Limited to 5 clients at any one time.</p>
+        <p class="service-duration">Limited to five clients</p>
+        <p class="service-desc">A consistent thinking partner who already knows your business. Limited to five clients.</p>
         <p class="service-fit"><strong>Right for you if:</strong> You want ongoing support without a big commitment. Often where clients land after implementation ends.</p>
-        <p class="service-hours">3 hrs/month &middot; fixed scope &middot; limited availability</p>
+        <p class="service-hours">Fixed scope &middot; limited availability</p>
       </div>
 
     </div>
@@ -1301,7 +1281,6 @@
 ──────────────────────────────────────────────────────────── -->
 <section class="results" id="results">
 
-  <!-- Decorative node diagram left -->
   <svg class="results-diagram" viewBox="0 0 380 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid slice">
     <circle cx="190" cy="120" r="90" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
     <circle cx="80"  cy="320" r="65" fill="none" stroke="#F6F5F0" stroke-width="0.6"/>
@@ -1316,34 +1295,44 @@
   <div class="results-inner">
     <p class="eyebrow-light">Results</p>
     <h2>The same pattern across every scale</h2>
-    <p class="results-intro">Siloed tools, broken processes, systems that depend on one person to hold them together: the examples below run from a multi-national media company to a small creative team. Scale is largely irrelevant to the problem, which is why the same approach applies across the board.</p>
+    <p class="results-intro">Siloed tools, broken processes, systems that depend on one person to hold them together: scale doesn&rsquo;t matter, which is why the same approach applies across the board.</p>
 
-    <ul class="results-list">
-      <li>
-        <span class="results-arrow">&#8594;</span>
-        <span>Led a <strong>full marketing capability assessment and operational roadmap</strong> for a EU-government funded organisation, a 50-person body where communications, technology, and team processes had each grown independently and never been connected</span>
-      </li>
-      <li>
-        <span class="results-arrow">&#8594;</span>
-        <span>Delivered a <strong>growth marketing and creative operations audit across 5 business units</strong> at a major news publication, with 20+ stakeholder interviews to surface what wasn't working and why</span>
-      </li>
-      <li>
-        <span class="results-arrow">&#8594;</span>
-        <span>Led a <strong>marketing operations and tracking platform review at a major streaming platform</strong>, where the tools were in place but the integration was not; praised by client leadership for the resulting efficiency improvements</span>
-      </li>
-      <li>
-        <span class="results-arrow">&#8594;</span>
-        <span>Delivered <strong>Airtable implementations and full data migrations</strong> for creative and marketing teams who had outgrown their spreadsheets and needed a structured system to replace them</span>
-      </li>
-      <li>
-        <span class="results-arrow">&#8594;</span>
-        <span><strong>Co-founded an Innovate UK-backed adtech startup</strong> through two grant cycles, which means understanding what it is to be responsible for building the systems rather than simply advising on them</span>
-      </li>
-    </ul>
+    <div class="results-grid">
 
-    <p class="results-close">Large organisations have the budget to commission formal audits. Small businesses have the same problems and fewer people to absorb them. The track record above is relevant to both.</p>
+      <div class="result-card">
+        <p class="result-tag">EU Government Body</p>
+        <h3>Marketing Capability Assessment &amp; Operational Roadmap</h3>
+        <p>A 50-person body where communications, technology, and team processes had each grown independently and never been connected. Led the full assessment and built the roadmap to bring them together.</p>
+      </div>
+
+      <div class="result-card">
+        <p class="result-tag">Major News Publication</p>
+        <h3>Growth Marketing &amp; Creative Operations Audit</h3>
+        <p>Delivered across 5 business units to surface what wasn&rsquo;t working and why. Multiple stakeholder streams, one clear picture of where the problems started.</p>
+      </div>
+
+      <div class="result-card">
+        <p class="result-tag">Major Streaming Platform</p>
+        <h3>Marketing Operations &amp; Tracking Platform Review</h3>
+        <p>The tools were in place but the integration was not. Led the review and defined the connections. Praised by client leadership for the resulting efficiency improvements.</p>
+      </div>
+
+      <div class="result-card">
+        <p class="result-tag">Creative &amp; Marketing Teams</p>
+        <h3>Airtable Implementations &amp; Full Data Migrations</h3>
+        <p>For teams who had outgrown their spreadsheets and needed a structured system to replace them. End-to-end implementation and migration, built to be owned by the team.</p>
+      </div>
+
+      <div class="result-card full-width">
+        <p class="result-tag">Co-Founder</p>
+        <h3>Innovate UK-Backed Adtech Startup &mdash; Two Grant Cycles</h3>
+        <p>Co-founded through two Innovate UK grant cycles. This means understanding what it is to be responsible for building the systems &mdash; not just advising on them &mdash; with limited time, limited budget, and no one to escalate to.</p>
+      </div>
+
+    </div>
+
     <div class="results-cta">
-      <a href="#contact" class="btn-outline-white">Let's talk</a>
+      <a href="#contact" class="btn-outline-white">Let&rsquo;s talk</a>
     </div>
   </div>
 </section>
@@ -1362,6 +1351,18 @@
 </section>
 
 <!-- ──────────────────────────────────────────────────────────
+     CLOSING CTA
+──────────────────────────────────────────────────────────── -->
+<section class="closing-cta">
+  <div class="closing-cta-inner">
+    <p class="eyebrow" style="justify-content:center">Get Started</p>
+    <h2>Ready to stop holding everything together yourself?</h2>
+    <p>The Clarity Call is 90 minutes. You&rsquo;ll leave with a clear picture of what&rsquo;s broken and a concrete plan for what to do next.</p>
+    <a href="#contact" class="btn-dark">Book a Clarity Call &rarr;</a>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────
      CONTACT
 ──────────────────────────────────────────────────────────── -->
 <section class="contact" id="contact">
@@ -1369,8 +1370,8 @@
 
     <div class="contact-left">
       <p class="eyebrow-slate">Contact</p>
-      <h2>Let's Talk</h2>
-      <p>If the business is running well but the systems behind it are not, let&rsquo;s talk.</p>
+      <h2>Let&rsquo;s Talk</h2>
+      <p>If your business is running well but the systems behind it are not, let&rsquo;s talk.</p>
       <a href="mailto:hello@jesscarlin.com" class="contact-email">hello@jesscarlin.com</a>
     </div>
 
@@ -1401,10 +1402,10 @@
       </div>
       <div class="form-group">
         <label for="message">Message *</label>
-        <textarea id="message" name="message" required placeholder="What's going on in your business?"></textarea>
+        <textarea id="message" name="message" required placeholder="What&apos;s going on in your business?"></textarea>
       </div>
       <div>
-        <p class="interest-label">I'm interested in</p>
+        <p class="interest-label">I&rsquo;m interested in</p>
         <div class="checkboxes">
           <label class="checkbox-row">
             <input type="checkbox" name="interest" value="The Clarity Call">
@@ -1420,7 +1421,7 @@
           </label>
           <label class="checkbox-row">
             <input type="checkbox" name="interest" value="The Monthly Advisory">
-            The Monthly Advisory &mdash; &pound;750/mo
+            The Monthly Advisory &mdash; &pound;1,000/mo
           </label>
           <label class="checkbox-row">
             <input type="checkbox" name="interest" value="Other">
@@ -1440,6 +1441,7 @@
 <footer>
   <div class="footer-inner">
     <a href="#" class="footer-logo">Jessica Carlin Consulting</a>
+    <span class="footer-tagline">Stop being the glue.</span>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/jessicacarlin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="mailto:hello@jesscarlin.com">hello@jesscarlin.com</a>
