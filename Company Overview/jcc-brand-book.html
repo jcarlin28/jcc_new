@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessica Carlin Consulting — Brand Guidelines 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green:      #1B2B2A;
+      --green-mid:  #243B39;
+      --terracotta: #C4552A;
+      --cream:      #F6F5F0;
+      --slate:      #8B9E9D;
+      --slate-light:#B8C9C8;
+      --white:      #FFFFFF;
+      --line-dark:  rgba(27,43,42,0.08);
+      --line-light: rgba(246,245,240,0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--cream);
+      color: var(--green);
+    }
+
+    .section-label {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--slate);
+    }
+
+    .section-wrap {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 64px;
+    }
+
+    /* ── COVER ───────────────────────────────────────────────── */
+    .cover {
+      background: var(--green);
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 56px 64px;
+    }
+
+    .cover-nav {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      padding: 40px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 3;
+    }
+
+    .cover-nav span {
+      font-family: 'Outfit', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(246,245,240,0.35);
+      letter-spacing: 0.08em;
+    }
+
+    .cover-diagram {
+      position: absolute;
+      top: 0; right: 0;
+      width: 56%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .cover-rule {
+      position: absolute;
+      left: 64px;
+      right: 64px;
+      bottom: 180px;
+      height: 1px;
+      background: rgba(246,245,240,0.1);
+      z-index: 2;
+    }
+
+    .cover-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cover-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(48px, 7vw, 88px);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      margin-bottom: 32px;
+    }
+
+    .cover-meta {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .cover-sub {
+      font-family: 'Outfit', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(246,245,240,0.35);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .cover-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--terracotta);
+      flex-shrink: 0;
+    }
+
+    /* ── ESSENCE ─────────────────────────────────────────────── */
+    .essence {
+      background: var(--cream);
+      padding: 120px 0;
+      position: relative;
+    }
+
+    .essence-grid {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .essence-left {}
+
+    .essence-left .section-label {
+      display: block;
+      margin-bottom: 48px;
+    }
+
+    .essence-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 120px;
+      font-weight: 400;
+      color: rgba(27,43,42,0.05);
+      line-height: 1;
+      margin-top: -16px;
+    }
+
+    .essence-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(26px, 3vw, 42px);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.4;
+      color: var(--green);
+      margin-bottom: 48px;
+    }
+
+    .essence-note {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--slate);
+      line-height: 1.75;
+      max-width: 560px;
+      margin-bottom: 48px;
+      padding-left: 20px;
+      border-left: 1px solid var(--terracotta);
+    }
+
+    .keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .keyword {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+      padding: 8px 18px;
+      border: 1px solid var(--line-dark);
+    }
+
+    .keyword.accent {
+      color: var(--terracotta);
+      border-color: var(--terracotta);
+    }
+
+    /* ── MARK ────────────────────────────────────────────────── */
+    .mark-section {
+      background: var(--white);
+      padding: 120px 0;
+      border-top: 1px solid var(--line-dark);
+      border-bottom: 1px solid var(--line-dark);
+    }
+
+    .mark-intro {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--slate);
+      line-height: 1.75;
+      max-width: 500px;
+      margin-bottom: 72px;
+    }
+
+    .mark-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+
+    .mark-cell {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mark-bg {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mark-label {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11px;
+      color: var(--slate);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    /* ── COLOUR ──────────────────────────────────────────────── */
+    .colour-section {
+      background: var(--cream);
+      padding: 120px 0;
+    }
+
+    .colour-note {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--slate);
+      line-height: 1.7;
+      max-width: 480px;
+      margin-bottom: 64px;
+    }
+
+    .colour-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+
+    .swatch-block {
+      aspect-ratio: 2/3;
+    }
+
+    .swatch-info {
+      padding: 20px 0 0;
+    }
+
+    .swatch-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green);
+      margin-bottom: 6px;
+    }
+
+    .swatch-hex {
+      font-family: 'Outfit', sans-serif;
+      font-size: 12px;
+      color: var(--slate);
+      line-height: 1.7;
+    }
+
+    .swatch-role {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11px;
+      color: var(--slate);
+      font-style: italic;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    /* ── TYPOGRAPHY ──────────────────────────────────────────── */
+    .type-section {
+      background: var(--white);
+      padding: 120px 0;
+      border-top: 1px solid var(--line-dark);
+    }
+
+    .type-block {
+      margin-bottom: 80px;
+      padding-bottom: 80px;
+      border-bottom: 1px solid var(--line-dark);
+    }
+
+    .type-block:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .type-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--line-dark);
+    }
+
+    .type-font-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+    }
+
+    .type-usage {
+      font-family: 'Outfit', sans-serif;
+      font-size: 12px;
+      color: var(--slate);
+    }
+
+    .specimen-display {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(52px, 7vw, 96px);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.05;
+      color: var(--green);
+      letter-spacing: -0.02em;
+    }
+
+    .specimen-body {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--green);
+      max-width: 680px;
+    }
+
+    .type-scale {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .scale-row {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 32px;
+      align-items: baseline;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line-dark);
+    }
+
+    .scale-row:first-child { border-top: 1px solid var(--line-dark); }
+
+    .scale-label {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11px;
+      color: var(--slate);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ── GRAPHIC LANGUAGE ────────────────────────────────────── */
+    .graphic-section {
+      background: var(--green);
+      padding: 120px 0;
+    }
+
+    .graphic-intro {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      color: rgba(246,245,240,0.5);
+      max-width: 560px;
+      line-height: 1.8;
+      margin-bottom: 80px;
+    }
+
+    .elements-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      margin-bottom: 80px;
+    }
+
+    .element-cell {
+      background: rgba(246,245,240,0.03);
+      aspect-ratio: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding: 40px;
+    }
+
+    .element-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11px;
+      color: rgba(246,245,240,0.3);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .motif-section {
+      padding-top: 64px;
+      border-top: 1px solid rgba(246,245,240,0.08);
+    }
+
+    .motif-label {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(246,245,240,0.3);
+      margin-bottom: 32px;
+    }
+
+    .motif-desc {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-style: italic;
+      color: rgba(246,245,240,0.5);
+      max-width: 540px;
+      line-height: 1.5;
+      margin-bottom: 48px;
+    }
+
+    /* ── VOICE ───────────────────────────────────────────────── */
+    .voice-section {
+      background: var(--cream);
+      padding: 120px 0;
+    }
+
+    .voice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+    }
+
+    .voice-card {
+      background: var(--white);
+      padding: 48px;
+      border-top: 2px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .voice-card:hover { border-color: var(--terracotta); }
+
+    .voice-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 64px;
+      font-weight: 400;
+      color: rgba(27,43,42,0.07);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .voice-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 16px;
+    }
+
+    .voice-body {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--slate);
+      margin-bottom: 28px;
+    }
+
+    .ex-do, .ex-dont {
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      line-height: 1.6;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+    }
+
+    .ex-do {
+      background: rgba(27,43,42,0.03);
+      color: var(--green);
+      border-left: 2px solid var(--terracotta);
+    }
+
+    .ex-do::before { content: "✓  "; color: var(--terracotta); font-weight: 600; }
+
+    .ex-dont {
+      color: var(--slate-light);
+      border-left: 2px solid var(--line-dark);
+      text-decoration: line-through;
+      text-decoration-color: rgba(139,158,157,0.4);
+    }
+
+    /* ── IN USE ──────────────────────────────────────────────── */
+    .inuse-section {
+      background: var(--white);
+      padding: 120px 0;
+      border-top: 1px solid var(--line-dark);
+    }
+
+    .inuse-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .inuse-label {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--slate);
+      margin-bottom: 20px;
+    }
+
+    .bcard {
+      width: 100%;
+      aspect-ratio: 1.75;
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+
+    .bcard-front {
+      background: var(--green);
+      width: 100%; height: 100%;
+      padding: 28px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bcard-back {
+      background: var(--cream);
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bcard-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-style: italic;
+      color: var(--cream);
+    }
+
+    .bcard-role {
+      font-family: 'Outfit', sans-serif;
+      font-size: 8.5px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(246,245,240,0.35);
+      margin-top: 5px;
+    }
+
+    .bcard-contact {
+      font-family: 'Outfit', sans-serif;
+      font-size: 9.5px;
+      color: rgba(246,245,240,0.45);
+      line-height: 1.9;
+    }
+
+    .letterhead {
+      border: 1px solid var(--line-dark);
+      overflow: hidden;
+    }
+
+    .lhead-bar {
+      background: var(--green);
+      padding: 22px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lhead-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-style: italic;
+      color: var(--cream);
+      position: relative;
+      z-index: 2;
+    }
+
+    .lhead-contact {
+      font-family: 'Outfit', sans-serif;
+      font-size: 9px;
+      color: rgba(246,245,240,0.35);
+      text-align: right;
+      line-height: 1.9;
+      position: relative;
+      z-index: 2;
+    }
+
+    .lhead-body {
+      padding: 36px 32px 40px;
+      background: var(--white);
+    }
+
+    .lhead-line {
+      height: 7px;
+      background: rgba(27,43,42,0.05);
+      border-radius: 2px;
+      margin-bottom: 10px;
+    }
+
+    .lhead-line.short { width: 35%; }
+    .lhead-line.med   { width: 65%; }
+
+    /* ── FOOTER ──────────────────────────────────────────────── */
+    .brand-footer {
+      background: var(--green);
+      padding: 44px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(246,245,240,0.06);
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-style: italic;
+      color: var(--cream);
+    }
+
+    .footer-copy {
+      font-family: 'Outfit', sans-serif;
+      font-size: 12px;
+      color: rgba(246,245,240,0.2);
+    }
+
+    /* ── SECTION DIVIDER ─────────────────────────────────────── */
+    .section-header {
+      margin-bottom: 64px;
+    }
+
+    .section-num-label {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 0;
+    }
+
+    .section-num-label .num {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--terracotta);
+      letter-spacing: 0.1em;
+    }
+
+    .section-num-label .rule {
+      flex: 1;
+      max-width: 40px;
+      height: 1px;
+      background: var(--terracotta);
+      opacity: 0.4;
+    }
+
+    /* ── RESPONSIVE ──────────────────────────────────────────── */
+    @media (max-width: 960px) {
+      .section-wrap { padding: 0 40px; }
+      .cover { padding: 40px; }
+      .cover-nav { padding: 32px 40px; }
+      .essence-grid { grid-template-columns: 1fr; gap: 48px; }
+      .mark-grid { grid-template-columns: 1fr 1fr; }
+      .colour-grid { grid-template-columns: repeat(2, 1fr); }
+      .elements-row { grid-template-columns: repeat(2, 1fr); }
+      .voice-grid { grid-template-columns: 1fr; }
+      .inuse-grid { grid-template-columns: 1fr; }
+      .brand-footer { padding: 40px; }
+    }
+
+    @media (max-width: 640px) {
+      .section-wrap { padding: 0 24px; }
+      .cover { padding: 24px 24px 40px; }
+      .cover-nav { padding: 24px; }
+      .mark-grid { grid-template-columns: 1fr; }
+      .scale-row { grid-template-columns: 1fr; gap: 8px; }
+      .brand-footer { flex-direction: column; align-items: flex-start; gap: 12px; padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── COVER ──────────────────────────────────────────────────── -->
+<section class="cover">
+  <div class="cover-nav">
+    <span>Jessica Carlin Consulting</span>
+    <span>Brand Guidelines · 2026</span>
+  </div>
+
+  <!-- Connecting nodes diagram — the signature motif -->
+  <div class="cover-diagram">
+    <svg viewBox="0 0 620 900" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMaxYMid slice">
+
+      <!-- Fine grid backdrop -->
+      <defs>
+        <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+          <circle cx="80" cy="80" r="1.5" fill="#F6F5F0" opacity="0.08"/>
+        </pattern>
+      </defs>
+      <rect width="620" height="900" fill="url(#grid)"/>
+
+      <!-- Connecting lines — drawn first so nodes sit on top -->
+      <line x1="160" y1="160" x2="320" y2="240" stroke="#F6F5F0" stroke-width="0.75" opacity="0.2"/>
+      <line x1="320" y1="240" x2="480" y2="160" stroke="#F6F5F0" stroke-width="0.75" opacity="0.2"/>
+      <line x1="320" y1="240" x2="320" y2="400" stroke="#F6F5F0" stroke-width="0.75" opacity="0.2"/>
+      <line x1="160" y1="160" x2="80"  y2="320" stroke="#F6F5F0" stroke-width="0.75" opacity="0.12"/>
+      <line x1="320" y1="400" x2="480" y2="480" stroke="#F6F5F0" stroke-width="0.75" opacity="0.2"/>
+      <line x1="320" y1="400" x2="160" y2="480" stroke="#F6F5F0" stroke-width="0.75" opacity="0.15"/>
+      <line x1="480" y1="480" x2="560" y2="640" stroke="#F6F5F0" stroke-width="0.75" opacity="0.12"/>
+      <line x1="160" y1="480" x2="80"  y2="640" stroke="#F6F5F0" stroke-width="0.75" opacity="0.12"/>
+      <line x1="480" y1="160" x2="560" y2="320" stroke="#F6F5F0" stroke-width="0.75" opacity="0.1"/>
+
+      <!-- Disconnected nodes (the problem) -->
+      <circle cx="80"  cy="320" r="4" fill="none" stroke="#F6F5F0" stroke-width="1" opacity="0.2"/>
+      <circle cx="560" cy="320" r="4" fill="none" stroke="#F6F5F0" stroke-width="1" opacity="0.2"/>
+      <circle cx="80"  cy="640" r="4" fill="none" stroke="#F6F5F0" stroke-width="1" opacity="0.15"/>
+      <circle cx="560" cy="640" r="4" fill="none" stroke="#F6F5F0" stroke-width="1" opacity="0.15"/>
+      <circle cx="240" cy="640" r="4" fill="none" stroke="#F6F5F0" stroke-width="1" opacity="0.1"/>
+      <circle cx="400" cy="720" r="4" fill="none" stroke="#F6F5F0" stroke-width="1" opacity="0.1"/>
+
+      <!-- Connected nodes (the solution) -->
+      <circle cx="160" cy="160" r="6" fill="#F6F5F0" opacity="0.5"/>
+      <circle cx="480" cy="160" r="6" fill="#F6F5F0" opacity="0.5"/>
+      <circle cx="160" cy="480" r="6" fill="#F6F5F0" opacity="0.4"/>
+      <circle cx="480" cy="480" r="6" fill="#F6F5F0" opacity="0.4"/>
+
+      <!-- Hub nodes — terracotta, active/connected -->
+      <circle cx="320" cy="240" r="8"  fill="#C4552A" opacity="0.9"/>
+      <circle cx="320" cy="400" r="10" fill="#C4552A"/>
+      <circle cx="320" cy="400" r="18" fill="none" stroke="#C4552A" stroke-width="1" opacity="0.3"/>
+
+      <!-- Structural rule lines -->
+      <line x1="40" y1="760" x2="580" y2="760" stroke="#F6F5F0" stroke-width="0.5" opacity="0.08"/>
+      <line x1="40" y1="800" x2="580" y2="800" stroke="#F6F5F0" stroke-width="0.5" opacity="0.05"/>
+    </svg>
+  </div>
+
+  <div class="cover-rule"></div>
+
+  <div class="cover-content">
+    <div class="cover-title">Jessica<br>Carlin<br>Consulting</div>
+    <div class="cover-meta">
+      <div class="cover-dot"></div>
+      <span class="cover-sub">Brand Guidelines — 2026</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── 01 BRAND ESSENCE ───────────────────────────────────────── -->
+<section class="essence">
+  <div class="section-wrap">
+    <div class="essence-grid">
+      <div class="essence-left">
+        <div class="section-num-label" style="margin-bottom: 48px;">
+          <span class="num">01</span>
+          <div class="rule"></div>
+          <span class="section-label">Brand Essence</span>
+        </div>
+        <div class="essence-num">01</div>
+      </div>
+      <div>
+        <p class="essence-quote">"The systems behind your business should work as hard as you do."</p>
+        <p class="essence-note">For solo practitioners and small businesses who've built something real — but whose tools, processes, and workflows haven't kept up. We surface what's broken, fix it in the right order, and build something that runs without you holding it together.</p>
+        <div class="keywords">
+          <span class="keyword accent">Direct</span>
+          <span class="keyword accent">Precise</span>
+          <span class="keyword">Practical</span>
+          <span class="keyword">Grounded</span>
+          <span class="keyword">Honest</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── 02 THE MARK ────────────────────────────────────────────── -->
+<section class="mark-section">
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-num-label" style="margin-bottom: 24px;">
+        <span class="num">02</span>
+        <div class="rule"></div>
+        <span class="section-label">The Mark</span>
+      </div>
+      <p class="mark-intro">The JC monogram is the primary mark — precise and contained, like the systems it represents. The terracotta circle is always present. The wordmark "Jessica Carlin Consulting" is always set in Cormorant Garamond Italic.</p>
+    </div>
+
+    <div class="mark-grid">
+
+      <div class="mark-cell">
+        <div class="mark-bg" style="background: var(--cream);">
+          <svg viewBox="0 0 200 200" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="86" fill="none" stroke="#C4552A" stroke-width="1.25"/>
+            <text x="100" y="128" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="78" fill="#1B2B2A">JC</text>
+          </svg>
+        </div>
+        <p class="mark-label">Primary — on Cream</p>
+      </div>
+
+      <div class="mark-cell">
+        <div class="mark-bg" style="background: var(--green);">
+          <svg viewBox="0 0 200 200" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="86" fill="none" stroke="#C4552A" stroke-width="1.25"/>
+            <text x="100" y="128" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="78" fill="#F6F5F0">JC</text>
+          </svg>
+        </div>
+        <p class="mark-label" style="color:var(--slate);">Reversed — on Forest Green</p>
+      </div>
+
+      <div class="mark-cell">
+        <div class="mark-bg" style="background: var(--white); border: 1px solid var(--line-dark);">
+          <svg viewBox="0 0 200 200" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="86" fill="none" stroke="#C4552A" stroke-width="1.25"/>
+            <text x="100" y="128" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="78" fill="#1B2B2A">JC</text>
+          </svg>
+        </div>
+        <p class="mark-label">On White</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── 03 COLOUR ──────────────────────────────────────────────── -->
+<section class="colour-section">
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-num-label" style="margin-bottom: 24px;">
+        <span class="num">03</span>
+        <div class="rule"></div>
+        <span class="section-label">Colour Palette</span>
+      </div>
+      <p class="colour-note">A restrained palette. Forest Green anchors everything. Terracotta is used sparingly — for the mark, active elements, and singular moments of emphasis. Never decoration.</p>
+    </div>
+
+    <div class="colour-grid">
+
+      <div>
+        <div class="swatch-block" style="background:#1B2B2A;"></div>
+        <div class="swatch-info">
+          <p class="swatch-name">Forest Green</p>
+          <p class="swatch-hex">#1B2B2A</p>
+          <p class="swatch-hex">RGB 27 · 43 · 42</p>
+          <p class="swatch-role">Primary. Backgrounds, headings, the mark on light surfaces.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="swatch-block" style="background:#C4552A;"></div>
+        <div class="swatch-info">
+          <p class="swatch-name">Terracotta</p>
+          <p class="swatch-hex">#C4552A</p>
+          <p class="swatch-hex">RGB 196 · 85 · 42</p>
+          <p class="swatch-role">Accent. The mark's circle, active nodes, key emphasis only. Never backgrounds.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="swatch-block" style="background:#F6F5F0; border:1px solid rgba(27,43,42,0.08);"></div>
+        <div class="swatch-info">
+          <p class="swatch-name">Cream</p>
+          <p class="swatch-hex">#F6F5F0</p>
+          <p class="swatch-hex">RGB 246 · 245 · 240</p>
+          <p class="swatch-role">Neutral. Page backgrounds, reversed text on dark surfaces.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="swatch-block" style="background:#8B9E9D;"></div>
+        <div class="swatch-info">
+          <p class="swatch-name">Warm Slate</p>
+          <p class="swatch-hex">#8B9E9D</p>
+          <p class="swatch-hex">RGB 139 · 158 · 157</p>
+          <p class="swatch-role">Supporting. Captions, secondary text, inactive elements.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── 04 TYPOGRAPHY ──────────────────────────────────────────── -->
+<section class="type-section">
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-num-label">
+        <span class="num">04</span>
+        <div class="rule"></div>
+        <span class="section-label">Typography</span>
+      </div>
+    </div>
+
+    <div class="type-block">
+      <div class="type-meta">
+        <span class="type-font-name">Cormorant Garamond — Display</span>
+        <span class="type-usage">Headlines · Pull quotes · Wordmark</span>
+      </div>
+      <p class="specimen-display">Built to last.<br><em>Fixed to work.</em></p>
+    </div>
+
+    <div class="type-block">
+      <div class="type-meta">
+        <span class="type-font-name">Outfit — Body &amp; UI</span>
+        <span class="type-usage">Body copy · Navigation · Labels · Metadata</span>
+      </div>
+      <p class="specimen-body">Your systems are costing you time and clients. The tools exist. They just don't talk to each other — and you're still the one holding everything together.</p>
+    </div>
+
+    <div class="type-block">
+      <div class="type-meta">
+        <span class="type-font-name">Type Scale</span>
+        <span class="type-usage">Sizing reference</span>
+      </div>
+      <div class="type-scale">
+        <div class="scale-row">
+          <span class="scale-label">Display / H1</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:56px;font-style:italic;font-weight:400;color:var(--green);line-height:1.05;">Display Heading</span>
+        </div>
+        <div class="scale-row">
+          <span class="scale-label">H2</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:400;color:var(--green);line-height:1.2;">Section Heading</span>
+        </div>
+        <div class="scale-row">
+          <span class="scale-label">H3</span>
+          <span style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:600;color:var(--green);">Card Heading — Outfit Semibold</span>
+        </div>
+        <div class="scale-row">
+          <span class="scale-label">Body</span>
+          <span style="font-family:'Outfit',sans-serif;font-size:16px;font-weight:300;color:var(--green);line-height:1.75;">Body copy · 16px · Outfit Light · 1.75 line height</span>
+        </div>
+        <div class="scale-row">
+          <span class="scale-label">Label</span>
+          <span style="font-family:'Outfit',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--slate);">Section Label · Outfit Medium · All Caps</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ── 05 GRAPHIC LANGUAGE ────────────────────────────────────── -->
+<section class="graphic-section">
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-num-label" style="margin-bottom: 24px;">
+        <span class="num" style="color:rgba(246,245,240,0.4);">05</span>
+        <div class="rule"></div>
+        <span class="section-label" style="color:rgba(246,245,240,0.3);">Graphic Language</span>
+      </div>
+      <p class="graphic-intro">The visual language is architectural — structural, precise, and purposeful. Every element has a reason to exist. The connecting nodes motif is the signature: dots and lines that represent systems being mapped, understood, and fixed. Use it with restraint.</p>
+    </div>
+
+    <div class="elements-row">
+
+      <div class="element-cell">
+        <svg viewBox="0 0 80 80" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dotgrid" width="16" height="16" patternUnits="userSpaceOnUse">
+              <circle cx="8" cy="8" r="1.2" fill="#F6F5F0" opacity="0.4"/>
+            </pattern>
+          </defs>
+          <rect width="80" height="80" fill="url(#dotgrid)"/>
+        </svg>
+        <span class="element-name">Dot Grid</span>
+      </div>
+
+      <div class="element-cell">
+        <svg viewBox="0 0 80 80" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+          <line x1="20" y1="20" x2="60" y2="40" stroke="#F6F5F0" stroke-width="0.75" opacity="0.5"/>
+          <line x1="60" y1="40" x2="40" y2="65" stroke="#F6F5F0" stroke-width="0.75" opacity="0.5"/>
+          <line x1="20" y1="20" x2="40" y2="65" stroke="#F6F5F0" stroke-width="0.75" opacity="0.3"/>
+          <circle cx="20" cy="20" r="4" fill="#F6F5F0" opacity="0.5"/>
+          <circle cx="60" cy="40" r="5" fill="#C4552A"/>
+          <circle cx="40" cy="65" r="3" fill="#F6F5F0" opacity="0.3"/>
+          <circle cx="40" cy="65" r="3" fill="none" stroke="#F6F5F0" stroke-width="1" opacity="0.3"/>
+        </svg>
+        <span class="element-name">Connecting Nodes</span>
+      </div>
+
+      <div class="element-cell">
+        <svg viewBox="0 0 80 80" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="8" width="64" height="64" fill="none" stroke="#F6F5F0" stroke-width="0.75" opacity="0.4"/>
+          <rect x="20" y="20" width="40" height="40" fill="none" stroke="#F6F5F0" stroke-width="0.5" opacity="0.2"/>
+          <line x1="8" y1="40" x2="72" y2="40" stroke="#F6F5F0" stroke-width="0.5" opacity="0.2"/>
+          <line x1="40" y1="8" x2="40" y2="72" stroke="#F6F5F0" stroke-width="0.5" opacity="0.2"/>
+        </svg>
+        <span class="element-name">Structural Grid</span>
+      </div>
+
+      <div class="element-cell">
+        <svg viewBox="0 0 80 80" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+          <line x1="8"  y1="24" x2="72" y2="24" stroke="#F6F5F0" stroke-width="1" opacity="0.6"/>
+          <line x1="8"  y1="40" x2="72" y2="40" stroke="#F6F5F0" stroke-width="0.5" opacity="0.3"/>
+          <line x1="8"  y1="56" x2="72" y2="56" stroke="#F6F5F0" stroke-width="0.5" opacity="0.2"/>
+          <circle cx="8" cy="24" r="2.5" fill="#C4552A"/>
+        </svg>
+        <span class="element-name">Fine Rule</span>
+      </div>
+
+    </div>
+
+    <div class="motif-section">
+      <p class="motif-label">The Signature Motif</p>
+      <p class="motif-desc">"Connecting the dots — between your tools, your data, and the business you're trying to build."</p>
+
+      <!-- Motif example — larger connecting nodes composition -->
+      <svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-height:180px;">
+        <defs>
+          <pattern id="dotgrid2" width="24" height="24" patternUnits="userSpaceOnUse">
+            <circle cx="12" cy="12" r="1" fill="#F6F5F0" opacity="0.06"/>
+          </pattern>
+        </defs>
+        <rect width="900" height="200" fill="url(#dotgrid2)"/>
+
+        <!-- Lines -->
+        <line x1="80"  y1="100" x2="220" y2="60"  stroke="#F6F5F0" stroke-width="0.75" opacity="0.25"/>
+        <line x1="220" y1="60"  x2="380" y2="100" stroke="#F6F5F0" stroke-width="0.75" opacity="0.25"/>
+        <line x1="380" y1="100" x2="500" y2="60"  stroke="#F6F5F0" stroke-width="0.75" opacity="0.25"/>
+        <line x1="500" y1="60"  x2="620" y2="100" stroke="#F6F5F0" stroke-width="0.75" opacity="0.25"/>
+        <line x1="620" y1="100" x2="780" y2="60"  stroke="#F6F5F0" stroke-width="0.75" opacity="0.25"/>
+        <line x1="780" y1="60"  x2="860" y2="100" stroke="#F6F5F0" stroke-width="0.75" opacity="0.15"/>
+        <line x1="220" y1="60"  x2="500" y2="60"  stroke="#F6F5F0" stroke-width="0.5"  opacity="0.12"/>
+        <line x1="380" y1="100" x2="620" y2="100" stroke="#F6F5F0" stroke-width="0.5"  opacity="0.12"/>
+
+        <!-- Disconnected (outline) -->
+        <circle cx="80"  cy="100" r="4" fill="none" stroke="#F6F5F0" stroke-width="1" opacity="0.2"/>
+        <circle cx="860" cy="100" r="4" fill="none" stroke="#F6F5F0" stroke-width="1" opacity="0.2"/>
+        <circle cx="780" cy="60"  r="4" fill="none" stroke="#F6F5F0" stroke-width="1" opacity="0.2"/>
+
+        <!-- Connected -->
+        <circle cx="220" cy="60"  r="5" fill="#F6F5F0" opacity="0.45"/>
+        <circle cx="620" cy="100" r="5" fill="#F6F5F0" opacity="0.45"/>
+
+        <!-- Active hubs — terracotta -->
+        <circle cx="380" cy="100" r="7"  fill="#C4552A"/>
+        <circle cx="500" cy="60"  r="9"  fill="#C4552A"/>
+        <circle cx="500" cy="60"  r="16" fill="none" stroke="#C4552A" stroke-width="0.75" opacity="0.35"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── 06 VOICE & TONE ─────────────────────────────────────────── -->
+<section class="voice-section">
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-num-label">
+        <span class="num">06</span>
+        <div class="rule"></div>
+        <span class="section-label">Voice &amp; Tone</span>
+      </div>
+    </div>
+
+    <div class="voice-grid">
+
+      <div class="voice-card">
+        <div class="voice-num">01</div>
+        <p class="voice-title">Speak to the feeling, not the symptom</p>
+        <p class="voice-body">The lead magnet breaking is not the problem. Months of low-grade frustration with systems that don't work is the problem. Speak to what they've been living with, not just the thing that finally snapped.</p>
+        <div class="ex-do">"You've known something was off for a while. Something finally broke — and now you're ready to fix all of it."</div>
+        <div class="ex-dont">"Is your lead magnet not converting? I can help."</div>
+      </div>
+
+      <div class="voice-card">
+        <div class="voice-num">02</div>
+        <p class="voice-title">Be realistic, not reassuring</p>
+        <p class="voice-body">Don't tell clients what they want to hear. Tell them what they need to hear — including when a tool they love won't work for them, or when the problem is bigger than they thought.</p>
+        <div class="ex-do">"There's no point building on a tool you're not going to use. Let's find what actually fits how you work."</div>
+        <div class="ex-dont">"We can make any tool work for your business with the right setup."</div>
+      </div>
+
+      <div class="voice-card">
+        <div class="voice-num">03</div>
+        <p class="voice-title">Evidence over assertion</p>
+        <p class="voice-body">This problem exists at every scale — prove it. Name the client, the problem, the outcome. The enterprise credentials build trust with a solo practitioner precisely because it shows the pattern is universal.</p>
+        <div class="ex-do">"I've seen the same disconnected systems at Peacock and in businesses of one. The fix follows the same logic."</div>
+        <div class="ex-dont">"With extensive cross-sector experience, I deliver transformative results for clients of all sizes."</div>
+      </div>
+
+      <div class="voice-card">
+        <div class="voice-num">04</div>
+        <p class="voice-title">Direct and boundaried</p>
+        <p class="voice-body">Scope is everything. Be clear about what's included and what isn't — not to be difficult, but because vague engagements serve no one. Clarity upfront is a feature, not a red flag.</p>
+        <div class="ex-do">"Five hours per month, fixed. Scope agreed at the start of each month. No surprises."</div>
+        <div class="ex-dont">"I'm always available to support you as needs arise throughout our engagement."</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── 07 IN USE ──────────────────────────────────────────────── -->
+<section class="inuse-section">
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-num-label">
+        <span class="num">07</span>
+        <div class="rule"></div>
+        <span class="section-label">In Use</span>
+      </div>
+    </div>
+
+    <div class="inuse-grid">
+
+      <div>
+        <p class="inuse-label">Business Card</p>
+
+        <!-- Front -->
+        <div class="bcard">
+          <div class="bcard-front">
+            <!-- Structural line accent + node motif -->
+            <svg style="position:absolute;top:0;right:0;width:180px;height:100%;" viewBox="0 0 180 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="180" y1="0"  x2="180" y2="120" stroke="#F6F5F0" stroke-width="0.5" opacity="0.08"/>
+              <line x1="100" y1="0"  x2="100" y2="120" stroke="#F6F5F0" stroke-width="0.5" opacity="0.05"/>
+              <line x1="60"  y1="40" x2="120" y2="80"  stroke="#F6F5F0" stroke-width="0.75" opacity="0.25"/>
+              <line x1="120" y1="80" x2="160" y2="40"  stroke="#F6F5F0" stroke-width="0.75" opacity="0.25"/>
+              <circle cx="60"  cy="40" r="3" fill="#F6F5F0" opacity="0.3"/>
+              <circle cx="160" cy="40" r="3" fill="#F6F5F0" opacity="0.3"/>
+              <circle cx="120" cy="80" r="4" fill="#C4552A" opacity="0.9"/>
+            </svg>
+            <div style="position:relative;z-index:2;">
+              <p class="bcard-name">Jessica Carlin</p>
+              <p class="bcard-role">Systems &amp; Transformation Consultant</p>
+            </div>
+            <div class="bcard-contact" style="position:relative;z-index:2;">
+              hello@jesscarlin.com<br>
+              jesscarlin.com<br>
+              London, UK
+            </div>
+          </div>
+        </div>
+
+        <!-- Back -->
+        <div class="bcard">
+          <div class="bcard-back">
+            <svg viewBox="0 0 200 200" width="110" height="110" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="86" fill="none" stroke="#C4552A" stroke-width="1.25"/>
+              <text x="100" y="128" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="78" fill="#1B2B2A">JC</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Letterhead -->
+      <div>
+        <p class="inuse-label">Document / Letterhead</p>
+        <div class="letterhead">
+          <div class="lhead-bar">
+            <!-- Structural node accent -->
+            <svg style="position:absolute;top:0;right:0;height:100%;width:200px;" viewBox="0 0 200 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="200" y1="0" x2="200" y2="72" stroke="#F6F5F0" stroke-width="0.5" opacity="0.08"/>
+              <line x1="80"  y1="36" x2="140" y2="20" stroke="#F6F5F0" stroke-width="0.75" opacity="0.2"/>
+              <line x1="140" y1="20" x2="180" y2="48" stroke="#F6F5F0" stroke-width="0.75" opacity="0.2"/>
+              <circle cx="80"  cy="36" r="2.5" fill="#F6F5F0" opacity="0.25"/>
+              <circle cx="180" cy="48" r="2.5" fill="#F6F5F0" opacity="0.25"/>
+              <circle cx="140" cy="20" r="4"   fill="#C4552A" opacity="0.8"/>
+            </svg>
+            <p class="lhead-brand">Jessica Carlin Consulting</p>
+            <p class="lhead-contact">hello@jesscarlin.com<br>jesscarlin.com</p>
+          </div>
+          <div class="lhead-body">
+            <div class="lhead-line short" style="margin-bottom:28px;"></div>
+            <div class="lhead-line"></div>
+            <div class="lhead-line"></div>
+            <div class="lhead-line med"></div>
+            <div class="lhead-line"></div>
+            <div style="margin-top:24px;">
+              <div class="lhead-line med"></div>
+              <div class="lhead-line"></div>
+              <div class="lhead-line short"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ─────────────────────────────────────────────────── -->
+<footer class="brand-footer">
+  <span class="footer-brand">Jessica Carlin Consulting</span>
+  <span class="footer-copy">Brand Guidelines · 2026 · Confidential</span>
+</footer>
+
+</body>
+</html>
