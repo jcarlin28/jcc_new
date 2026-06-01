@@ -341,15 +341,15 @@
     }
 
     .cred-logo {
-      height: 60px;
+      height: 72px;
       width: auto;
-      max-width: 200px;
-      opacity: 0.32;
+      max-width: 220px;
+      opacity: 0.65;
       filter: grayscale(1);
       transition: opacity 0.2s;
       display: block;
     }
-    .cred-logo:hover { opacity: 0.55; }
+    .cred-logo:hover { opacity: 0.9; }
 
     .nascar-slide {
       width: 100%;
@@ -1089,7 +1089,16 @@
   <div class="cred-strip-inner">
     <span class="cred-label">Organisations I&rsquo;ve worked with</span>
     <div class="cred-logos">
-      <img src="assets/nascar_slide.png" alt="Organisations including Cineworld, Disney, Warner Bros, The Economist Group, Peacock and NBCUniversal" class="nascar-slide">
+      <img src="assets/logo-eitcc.png"      alt="EIT Culture &amp; Creativity" class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>EIT Culture &amp; Creativity</span>'">
+      <img src="assets/logo-economist.png"  alt="The Economist Group"          class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>The Economist Group</span>'">
+      <img src="assets/logo-peacock.png"    alt="NBCUniversal &middot; Peacock" class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>NBCUniversal &middot; Peacock</span>'">
+      <img src="assets/logo-cineworld.png"  alt="Cineworld"                    class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>Cineworld</span>'">
+      <img src="assets/logo-disney.png"     alt="Disney"                       class="cred-logo"
+        onerror="this.outerHTML='<span class=\'cred-logo-text\'>Disney</span>'">
     </div>
   </div>
 </section>
