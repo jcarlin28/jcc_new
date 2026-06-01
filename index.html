@@ -312,10 +312,10 @@
 
     /* ── CREDIBILITY STRIP ────────────────────────────────────── */
     .cred-strip {
-      background: var(--cream);
+      background: var(--green);
       padding: 44px var(--ph);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      border-top: none;
+      border-bottom: none;
     }
 
     .cred-strip-inner {
@@ -329,7 +329,7 @@
       font-weight: 500;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--slate-lt);
+      color: rgba(255,255,255,0.3);
       margin-bottom: 18px;
     }
 
@@ -342,15 +342,15 @@
     }
 
     .cred-logo {
-      height: 72px;
+      height: 36px;
       width: auto;
-      max-width: 220px;
-      opacity: 0.65;
-      filter: grayscale(1);
+      max-width: 140px;
+      opacity: 0.55;
+      filter: grayscale(1) brightness(10);
       transition: opacity 0.2s;
       display: block;
     }
-    .cred-logo:hover { opacity: 0.9; }
+    .cred-logo:hover { opacity: 0.85; }
 
     .nascar-slide {
       width: 100%;
