@@ -312,10 +312,10 @@
 
     /* ── CREDIBILITY STRIP ────────────────────────────────────── */
     .cred-strip {
-      background: #1d2c1d;
+      background: var(--cream);
       padding: 40px var(--ph);
-      border-top: 1px solid rgba(255,255,255,0.1);
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
 
     .cred-strip-inner {
@@ -329,7 +329,7 @@
       font-weight: 500;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.3);
+      color: var(--slate);
       margin-bottom: 24px;
       text-align: center;
     }
@@ -729,8 +729,6 @@
 
     .result-card.full-width {
       grid-column: 1 / -1;
-      background: var(--cream) !important;
-      border-left: 4px solid var(--terracotta);
     }
 
     .result-tag {
