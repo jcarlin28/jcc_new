@@ -42,7 +42,7 @@
   <style>
     :root {
       --green:      #1B2B2A;
-      --green-mid:  #243B39;
+      --green-mid:  #1B2B2A; /* alias kept for safety, same as --green */
       --terracotta: #C4552A;
       --cream:      #F6F5F0;
       --white:      #FFFFFF;
@@ -312,10 +312,10 @@
 
     /* ── CREDIBILITY STRIP ────────────────────────────────────── */
     .cred-strip {
-      background: linear-gradient(rgba(246,245,240,0.06), rgba(246,245,240,0.06)) var(--green);
+      background: #1B2B2A;
       padding: 40px var(--ph);
-      border-top: 1px solid rgba(255,255,255,0.08);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
     .cred-strip-inner {
@@ -347,11 +347,11 @@
       width: auto;
       max-width: 120px;
       flex-shrink: 1;
-      opacity: 1;
+      opacity: 0.85;
       transition: opacity 0.2s;
       display: block;
     }
-    .cred-logo:hover { opacity: 0.75; }
+    .cred-logo:hover { opacity: 1; }
 
     .nascar-slide {
       width: 100%;
