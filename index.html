@@ -578,7 +578,7 @@
       padding: 36px;
       background: var(--white);
       position: relative;
-      transition: border-color 0.25s;
+      transition: background 0.25s, border-color 0.25s;
     }
 
     .service-card::before {
@@ -592,7 +592,24 @@
       transition: transform 0.3s ease;
     }
     .service-card:hover::before { transform: scaleX(1); }
-    .service-card:hover { border-color: rgba(27,43,42,0.22); }
+    .service-card:hover {
+      background: var(--green);
+      border-color: var(--green);
+    }
+    .service-card:hover h3,
+    .service-card:hover .service-price,
+    .service-card:hover .service-duration,
+    .service-card:hover .service-desc,
+    .service-card:hover .service-fit,
+    .service-card:hover .service-hours {
+      color: var(--cream);
+    }
+    .service-card:hover .service-price {
+      background: rgba(255,255,255,0.12);
+    }
+    .service-card:hover .service-hours {
+      border-top-color: rgba(246,245,240,0.2);
+    }
 
     .service-top {
       display: flex;
@@ -623,6 +640,7 @@
 
     .service-duration {
       font-size: 12px;
+      font-weight: 600;
       color: var(--slate);
       letter-spacing: 0.02em;
       margin-bottom: 20px;
@@ -630,7 +648,7 @@
 
     .service-desc {
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 500;
       color: var(--slate);
       line-height: 1.8;
       margin-bottom: 20px;
@@ -638,7 +656,7 @@
 
     .service-fit {
       font-size: 13px;
-      font-weight: 400;
+      font-weight: 500;
       color: var(--green);
       line-height: 1.65;
       margin-bottom: 16px;
